@@ -1,0 +1,82 @@
+W:\פרוייקטים יב 2026\עדי\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csprojAssemblyReference.cache
+W:\פרוייקטים יב 2026\עדי\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Form1.resources
+W:\פרוייקטים יב 2026\עדי\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Properties.Resources.resources
+W:\פרוייקטים יב 2026\עדי\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csproj.GenerateResource.cache
+W:\פרוייקטים יב 2026\עדי\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csproj.CoreCompileInputs.cache
+W:\פרוייקטים יב 2026\עדי\adiWFProject\adiWFProject\bin\Debug\adiWFProject.exe.config
+W:\פרוייקטים יב 2026\עדי\adiWFProject\adiWFProject\bin\Debug\adiWFProject.exe
+W:\פרוייקטים יב 2026\עדי\adiWFProject\adiWFProject\bin\Debug\adiWFProject.pdb
+W:\פרוייקטים יב 2026\עדי\adiWFProject\adiWFProject\obj\Debug\adiWFProject.exe
+W:\פרוייקטים יב 2026\עדי\adiWFProject\adiWFProject\obj\Debug\adiWFProject.pdb
+W:\פרוייקטים יב 2026\עדי\adiWFProject\adiWFProject\bin\Debug\access\db2.accdb
+W:\פרוייקטים יב 2026\עדי\adiWFProject\adiWFProject\obj\Debug\adiWFProject.login.resources
+W:\פרוייקטים יב 2026\עדי\adiWFProject\adiWFProject\bin\Debug\access\Database1.accdb
+W:\פרוייקטים יב 2026\עדי\adiWFProject\adiWFProject\obj\Debug\adiWFProject.testSelect.resources
+W:\פרוייקטים יב 2026\עדי\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csproj.AssemblyReference.cache
+W:\פרוייקטים יב 2026\עדי\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csproj.SuggestedBindingRedirects.cache
+D:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csproj.AssemblyReference.cache
+D:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Forms.activitiesForm.resources
+D:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Form1.resources
+D:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.login.resources
+D:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Properties.Resources.resources
+D:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csproj.GenerateResource.cache
+D:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csproj.CoreCompileInputs.cache
+D:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.exe
+D:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.pdb
+E:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csprojAssemblyReference.cache
+E:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Form1.resources
+E:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Forms.journiesForm.resources
+E:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Forms.journiesRegistingForm.resources
+E:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.login.resources
+E:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Properties.Resources.resources
+E:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csproj.GenerateResource.cache
+E:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csproj.CoreCompileInputs.cache
+E:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.exe
+E:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.pdb
+C:\Users\USER\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.activitiesForm.resources
+C:\Users\USER\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Form1.resources
+C:\Users\USER\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Forms.journiesForm.resources
+C:\Users\USER\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Forms.journiesRegistingForm.resources
+C:\Users\USER\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.login.resources
+C:\Users\USER\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Properties.Resources.resources
+C:\Users\USER\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.exe
+C:\Users\USER\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.pdb
+C:\Users\USER\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\Debug\access\Database1.accdb
+C:\Users\USER\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\Debug\access\db2.accdb
+C:\Users\USER\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\Debug\adiWFProject.exe.config
+C:\Users\USER\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\Debug\adiWFProject.exe
+C:\Users\USER\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\Debug\adiWFProject.pdb
+E:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\Debug\access\Database1.accdb
+E:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\Debug\access\db2.accdb
+E:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\Debug\adiWFProject.exe.config
+E:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\Debug\adiWFProject.exe
+E:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\Debug\adiWFProject.pdb
+E:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.activitiesForm.resources
+E:\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.activityReportForm.resources
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\Debug\access\Database1.accdb
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\Debug\access\db2.accdb
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\Debug\adiWFProject.exe.config
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\Debug\adiWFProject.exe
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\Debug\adiWFProject.pdb
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csproj.AssemblyReference.cache
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.activitiesForm.resources
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.activityReportForm.resources
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Form1.resources
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Forms.journiesForm.resources
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Forms.journiesRegistingForm.resources
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.login.resources
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.pupilForm.resources
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Properties.Resources.resources
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csproj.GenerateResource.cache
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csproj.CoreCompileInputs.cache
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.exe
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.pdb
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Forms.menuForm.resources
+C:\Users\User\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.activityReportForm.resources
+C:\Users\User\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Forms.menuForm.resources
+C:\Users\User\Desktop\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.pupilForm.resources
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\Debug\adiWFProject.Forms.staffForm.resources

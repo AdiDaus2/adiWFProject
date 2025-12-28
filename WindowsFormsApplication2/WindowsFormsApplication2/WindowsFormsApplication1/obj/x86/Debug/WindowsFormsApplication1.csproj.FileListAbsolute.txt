@@ -1,0 +1,65 @@
+C:\Users\user1.ORT_DOMAIN\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\user1.ORT_DOMAIN\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\user1.ORT_DOMAIN\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\user1.ORT_DOMAIN\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\user1.ORT_DOMAIN\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\user1.ORT_DOMAIN\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\user1.ORT_DOMAIN\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\user1.ORT_DOMAIN\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+E:\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+E:\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+H:\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+H:\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+F:\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+F:\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+F:\WindowsFormsApplication2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+F:\WindowsFormsApplication2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+F:\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+F:\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+F:\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+F:\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+F:\פרויקט יב #C\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+F:\פרויקט יב #C\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+F:\פרויקט יב #C\WindowsFormsApplication2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+F:\פרויקט יב #C\WindowsFormsApplication2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+F:\פרויקט יב #C\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+F:\פרויקט יב #C\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+F:\פרויקט יב #C\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+F:\פרויקט יב #C\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\פרויקטים מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\פרויקטים מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\פרויקטים מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\פרויקטים מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\פרויקטים מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\פרויקטים מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\פרויקטים מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\פרויקטים מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\sara\פרויקטים מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\sara\פרויקטים מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\sara\פרויקטים מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\sara\פרויקטים מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\sara\פרויקטים מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\sara\פרויקטים מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\sara\פרויקטים מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\sara\פרויקטים מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojAssemblyReference.cache
+C:\sara\פרויקטים מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\t\WindowsFormsApplication2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\t\WindowsFormsApplication2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\t\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojAssemblyReference.cache
+C:\t\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\t\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\t\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+C:\t\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\t\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\t\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\sara\מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\sara\מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\sara\מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
+C:\sara\מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\sara\מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\sara\מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+C:\sara\מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\sara\מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\sara\מערכות מנהליות\WindowsFormsApplication2\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
