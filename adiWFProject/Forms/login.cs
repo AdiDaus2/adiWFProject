@@ -160,7 +160,7 @@ namespace adiWFProject
 
                 if (userType != "")
                 {
-                    MessageBox.Show("שלום " + firstName + ", התחברת כ" + (userType == "staff" ? "מדריך" : "חניך"));
+                    MessageBox.Show("שלום " + firstName);
 
                     // פתיחת התפריט והעברת סוג המשתמש
                     menuForm mF = new menuForm(firstName, userType);

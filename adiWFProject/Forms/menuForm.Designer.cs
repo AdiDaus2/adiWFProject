@@ -75,7 +75,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label1.Location = new System.Drawing.Point(568, 9);
+            this.label1.Location = new System.Drawing.Point(503, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 18);
             this.label1.TabIndex = 1;
@@ -99,6 +99,7 @@
             this.מסעותToolStripMenuItem.Name = "מסעותToolStripMenuItem";
             this.מסעותToolStripMenuItem.Size = new System.Drawing.Size(81, 29);
             this.מסעותToolStripMenuItem.Text = "מסעות";
+            this.מסעותToolStripMenuItem.Click += new System.EventHandler(this.מסעותToolStripMenuItem_Click);
             // 
             // רישוםלמסעToolStripMenuItem
             // 
@@ -122,6 +123,7 @@
             this.פעולותToolStripMenuItem.Name = "פעולותToolStripMenuItem";
             this.פעולותToolStripMenuItem.Size = new System.Drawing.Size(83, 29);
             this.פעולותToolStripMenuItem.Text = "פעולות";
+            this.פעולותToolStripMenuItem.Click += new System.EventHandler(this.פעולותToolStripMenuItem_Click);
             // 
             // דווחעלפעולהToolStripMenuItem
             // 

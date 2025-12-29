@@ -94,9 +94,13 @@ namespace adiWFProject.Forms
 
         private void SetPupilPermissions()
         {
-            חניכיםToolStripMenuItem.Visible = true;
+            חניכיםToolStripMenuItem.Visible = false;
             חניכיםToolStripMenuItem.Text = "תפריט חניך";
+            מסעותToolStripMenuItem.Visible = true;
+            פעולותToolStripMenuItem.Visible = false;
             //toolStripMenuItem1.Visible = true;
+            רישוםלמסעToolStripMenuItem.Visible = true;
+            מסעחדשToolStripMenuItem.Visible = false;
         }
 
         // --- כפתור התנתקות ---
@@ -200,6 +204,16 @@ namespace adiWFProject.Forms
             {
                 MessageBox.Show("שגיאה בפתיחת הטופס: " + ex.Message);
             }
+        }
+
+        private void מסעותToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void פעולותToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
