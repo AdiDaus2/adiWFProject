@@ -65,21 +65,20 @@ namespace adiWFProject.Forms
         {
             InitializeComponent();
 
-            label1.Text = "שלום, " + name;
+            label1.Text = name;
             label2.Text = (userType == "staff") ? "סטטוס: מדריך" : "סטטוס: חניך";
 
             label1.Visible = true;
             label2.Visible = true;
-            label3.Visible = true;
 
             _userType = userType;
 
             // הגדרת טקסטים
-            toolStripMenuItem1.Text = "רישום למסעות";
+            //toolStripMenuItem1.Text = "רישום חניך חדש";
 
             // --- שורות הקישור הקריטיות ---
             // קישור לכפתור הרישום
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            //this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
 
             // קישור לכפתור ההתנתקות (חובה כדי שזה יעבוד!)
             this.התנתקותToolStripMenuItem.Click += new System.EventHandler(this.התנתקותToolStripMenuItem_Click);
@@ -97,7 +96,7 @@ namespace adiWFProject.Forms
         {
             חניכיםToolStripMenuItem.Visible = true;
             חניכיםToolStripMenuItem.Text = "תפריט חניך";
-            toolStripMenuItem1.Visible = true;
+            //toolStripMenuItem1.Visible = true;
         }
 
         // --- כפתור התנתקות ---
@@ -111,6 +110,48 @@ namespace adiWFProject.Forms
         // פתיחת טופס רישום למסעות
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
+        }
+
+        // כפתור חניכים (למדריך בלבד)
+        private void חניכיםToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                pupilForm pp = new pupilForm();
+                pp.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("שגיאה בפתיחת הטופס: " + ex.Message);
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click_1(object sender, EventArgs e)
+        { // כאשר אני לוחצת על הכפתור של חניכים זה מוביל FORM שנכתוב כאן
+            if (_userType == "staff")
+            {
+                //pupilForm ap = new pupilForm();
+                //activitiesForm activities = new activitiesForm();
+                //activityReportForm activityReport = new activityReportForm();
+
+                //activityReport.Show();
+                //activities.Show();
+                //ap.Show();
+            }
+        }
+
+        private void רישוםלמסעToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             try
             {
                 journiesRegistingForm jrf = new journiesRegistingForm();
@@ -122,13 +163,42 @@ namespace adiWFProject.Forms
             }
         }
 
-        // כפתור חניכים (למדריך בלבד)
-        private void חניכיםToolStripMenuItem_Click(object sender, EventArgs e)
+        private void מסעחדשToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (_userType == "staff")
+            try
             {
-                pupilForm ap = new pupilForm();
-                ap.Show();
+                journiesForm jf = new journiesForm();
+                jf.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("שגיאה בפתיחת הטופס: " + ex.Message);
+            }
+        }
+
+        private void דווחעלפעולהToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           try
+            {
+                activitiesForm af = new activitiesForm();
+                af.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("שגיאה בפתיחת הטופס: " + ex.Message);
+            }
+        }
+
+        private void חוותדעתעלהפעולהToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                activityReportForm arf = new activityReportForm();
+                arf.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("שגיאה בפתיחת הטופס: " + ex.Message);
             }
         }
     }
