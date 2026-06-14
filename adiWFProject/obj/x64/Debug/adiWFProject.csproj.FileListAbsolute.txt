@@ -1,7 +1,6 @@
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\x64\Debug\adiWFProject.exe
 C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\x64\Debug\access\Database1.accdb
 C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\x64\Debug\adiWFProject.exe.config
-C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\x64\Debug\adiWFProject.exe
-C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\x64\Debug\adiWFProject.pdb
 C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\x64\Debug\adiWFProject.csproj.AssemblyReference.cache
 C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\x64\Debug\adiWFProject.activitiesForm.resources
 C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\x64\Debug\adiWFProject.activityReportForm.resources

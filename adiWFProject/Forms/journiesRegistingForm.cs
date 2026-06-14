@@ -160,11 +160,37 @@ namespace adiWFProject
             }
         }
 
+        private bool IsValidIsraeliID(string id)
+        {
+            if (string.IsNullOrWhiteSpace(id) || id.Length > 9 || !long.TryParse(id, out _))
+                return false;
+
+            id = id.PadLeft(9, '0');
+
+            int sum = 0;
+            for (int i = 0; i < 9; i++)
+            {
+                int digit = int.Parse(id[i].ToString());
+                int weight = (i % 2 == 0) ? 1 : 2;
+                int mul = digit * weight;
+
+                sum += (mul > 9) ? (mul / 10 + mul % 10) : mul;
+            }
+
+            return (sum % 10 == 0);
+        }
+
         private void btnRegister_Click(object sender, EventArgs e)
         {
             if (cmJourneyCode.SelectedItem == null || string.IsNullOrWhiteSpace(txtPupilID.Text))
             {
                 MessageBox.Show("חובה לבחור קוד מסע ולהזין תעודת זהות תקינה.", "שגיאה בקלט", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!IsValidIsraeliID(txtPupilID.Text.Trim()))
+            {
+                MessageBox.Show("מספר תעודת הזהות אינו תקין לפי חוקי משרד הפנים!", "שגיאה בקלט", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -218,7 +244,6 @@ namespace adiWFProject
                     return;
                 }
 
-                // תיקון: לפי תמונת השגיאה באקסס, שם העמודה בטבלה הוא joumeyName (עם m במקום rn)
                 string sqlInsert = $@"INSERT INTO journiesRegisting (journeyCode, pupilID, joumeyName, place, parentPhoneNum, selfHealth, registerDate, totalPayment, paymentType, creditCardType) 
                                       VALUES ({journeyCode}, '{pupilID}', '{journeyName}', '{place}', '{parentPhone}', {healthStatement}, '{regestingDate}', {totalPayment}, '{paymentMethod}', '{creditCompany}')";
 
