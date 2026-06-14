@@ -104,12 +104,10 @@
   <ItemGroup>
     <Compile Include="appClass\activities.cs" />
     <Compile Include="appClass\activityReport.cs" />
-    <Compile Include="appClass\Customer.cs" />
     <Compile Include="appClass\DbInterface.cs" />
     <Compile Include="appClass\DbMain.cs" />
     <Compile Include="appClass\journies.cs" />
     <Compile Include="appClass\journiesRegisting.cs" />
-    <Compile Include="appClass\Person.cs" />
     <Compile Include="appClass\pupil.cs" />
     <Compile Include="appClass\staff.cs" />
     <Compile Include="appClass\tribe.cs" />
@@ -131,17 +129,17 @@
     <Compile Include="Forms\Duch2.Designer.cs">
       <DependentUpon>Duch2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\activitiesForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\activitiesForm.Designer.cs">
       <DependentUpon>activitiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Duch3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Duch3.Designer.cs">
+      <DependentUpon>Duch3.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\journiesForm.cs">
       <SubType>Form</SubType>
@@ -190,8 +188,11 @@
     <EmbeddedResource Include="Forms\Duch1.resx">
       <DependentUpon>Duch1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Duch2.resx">
+      <DependentUpon>Duch2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Duch3.resx">
+      <DependentUpon>Duch3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\journiesForm.resx">
       <DependentUpon>journiesForm.cs</DependentUpon>
@@ -247,10 +248,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="access\Database1.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="access\db2.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

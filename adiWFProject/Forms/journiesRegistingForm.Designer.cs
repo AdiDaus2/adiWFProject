@@ -31,21 +31,21 @@ namespace adiWFProject
         {
             this.checkBox = new System.Windows.Forms.CheckBox();
             this.securtiyInsure = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtCreditCardNumber = new System.Windows.Forms.TextBox();
             this.pupilName = new System.Windows.Forms.Label();
-            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.dtpRegisterDate = new System.Windows.Forms.DateTimePicker();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.update = new System.Windows.Forms.Button();
-            this.add = new System.Windows.Forms.Button();
-            this.search = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.btnSearchPupil = new System.Windows.Forms.Button();
+            this.txtJourneyName = new System.Windows.Forms.TextBox();
+            this.txtCreditCompany = new System.Windows.Forms.TextBox();
             this.title = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtParentPhoneNum = new System.Windows.Forms.TextBox();
             this.journyDate = new System.Windows.Forms.Label();
             this.CANCEL = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtJourneyPlace = new System.Windows.Forms.TextBox();
+            this.txtPupilName = new System.Windows.Forms.TextBox();
             this.journyName = new System.Windows.Forms.Label();
             this.price = new System.Windows.Forms.Label();
             this.place = new System.Windows.Forms.Label();
@@ -53,12 +53,12 @@ namespace adiWFProject
             this.pupilID = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmPaymentMethod = new System.Windows.Forms.ComboBox();
             this.paymentType = new System.Windows.Forms.Label();
-            this.creditCardType = new System.Windows.Forms.Label();
-            this.cardNum = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.JourneyCodeFiled = new System.Windows.Forms.TextBox();
+            this.lblCreditCompany = new System.Windows.Forms.Label();
+            this.lblCreditCardNumber = new System.Windows.Forms.Label();
+            this.txtPupilID = new System.Windows.Forms.TextBox();
+            this.cmJourneyCode = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,15 +87,15 @@ namespace adiWFProject
             this.securtiyInsure.TabIndex = 100;
             this.securtiyInsure.Text = "הצהרת בריאות:";
             // 
-            // textBox7
+            // txtCreditCardNumber
             // 
-            this.textBox7.Location = new System.Drawing.Point(465, 473);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox7.Size = new System.Drawing.Size(140, 26);
-            this.textBox7.TabIndex = 99;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.txtCreditCardNumber.Location = new System.Drawing.Point(465, 473);
+            this.txtCreditCardNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCreditCardNumber.Name = "txtCreditCardNumber";
+            this.txtCreditCardNumber.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtCreditCardNumber.Size = new System.Drawing.Size(140, 26);
+            this.txtCreditCardNumber.TabIndex = 99;
+            this.txtCreditCardNumber.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // pupilName
             // 
@@ -106,32 +106,32 @@ namespace adiWFProject
             this.pupilName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pupilName.Name = "pupilName";
             this.pupilName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.pupilName.Size = new System.Drawing.Size(140, 29);
+            this.pupilName.Size = new System.Drawing.Size(166, 29);
             this.pupilName.TabIndex = 98;
-            this.pupilName.Text = "שם החניך.ה:";
+            this.pupilName.Text = "שם הנרשם.מת:";
             // 
-            // dateTimePicker
+            // dtpRegisterDate
             // 
-            this.dateTimePicker.Location = new System.Drawing.Point(802, 469);
-            this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(144, 26);
-            this.dateTimePicker.TabIndex = 97;
+            this.dtpRegisterDate.Location = new System.Drawing.Point(802, 469);
+            this.dtpRegisterDate.Name = "dtpRegisterDate";
+            this.dtpRegisterDate.Size = new System.Drawing.Size(144, 26);
+            this.dtpRegisterDate.TabIndex = 97;
             // 
             // dataGridView
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(36, 253);
+            this.dataGridView.Location = new System.Drawing.Point(79, 523);
             this.dataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersWidth = 62;
-            this.dataGridView.Size = new System.Drawing.Size(374, 154);
+            this.dataGridView.Size = new System.Drawing.Size(1033, 329);
             this.dataGridView.TabIndex = 96;
             this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             // 
             // update
             // 
             this.update.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.update.Location = new System.Drawing.Point(298, 429);
+            this.update.Location = new System.Drawing.Point(1009, 881);
             this.update.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(112, 35);
@@ -140,47 +140,47 @@ namespace adiWFProject
             this.update.UseVisualStyleBackColor = false;
             this.update.Click += new System.EventHandler(this.update_Click);
             // 
-            // add
+            // btnRegister
             // 
-            this.add.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.add.Location = new System.Drawing.Point(160, 429);
-            this.add.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(112, 35);
-            this.add.TabIndex = 94;
-            this.add.Text = "הוסף";
-            this.add.UseVisualStyleBackColor = false;
-            this.add.Click += new System.EventHandler(this.add_Click);
+            this.btnRegister.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnRegister.Location = new System.Drawing.Point(871, 881);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(112, 35);
+            this.btnRegister.TabIndex = 94;
+            this.btnRegister.Text = "הוסף";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
-            // search
+            // btnSearchPupil
             // 
-            this.search.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.search.Location = new System.Drawing.Point(412, 162);
-            this.search.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(112, 35);
-            this.search.TabIndex = 93;
-            this.search.Text = "חפש";
-            this.search.UseVisualStyleBackColor = false;
-            this.search.Click += new System.EventHandler(this.search_Click);
+            this.btnSearchPupil.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSearchPupil.Location = new System.Drawing.Point(412, 162);
+            this.btnSearchPupil.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSearchPupil.Name = "btnSearchPupil";
+            this.btnSearchPupil.Size = new System.Drawing.Size(112, 35);
+            this.btnSearchPupil.TabIndex = 93;
+            this.btnSearchPupil.Text = "חפש";
+            this.btnSearchPupil.UseVisualStyleBackColor = false;
+            this.btnSearchPupil.Click += new System.EventHandler(this.btnSearchPupil_Click);
             // 
-            // textBox3
+            // txtJourneyName
             // 
-            this.textBox3.Location = new System.Drawing.Point(805, 418);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox3.Size = new System.Drawing.Size(140, 26);
-            this.textBox3.TabIndex = 5;
+            this.txtJourneyName.Location = new System.Drawing.Point(805, 418);
+            this.txtJourneyName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtJourneyName.Name = "txtJourneyName";
+            this.txtJourneyName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtJourneyName.Size = new System.Drawing.Size(140, 26);
+            this.txtJourneyName.TabIndex = 5;
             // 
-            // textBox6
+            // txtCreditCompany
             // 
-            this.textBox6.Location = new System.Drawing.Point(465, 412);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox6.Size = new System.Drawing.Size(140, 26);
-            this.textBox6.TabIndex = 91;
+            this.txtCreditCompany.Location = new System.Drawing.Point(465, 412);
+            this.txtCreditCompany.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCreditCompany.Name = "txtCreditCompany";
+            this.txtCreditCompany.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtCreditCompany.Size = new System.Drawing.Size(140, 26);
+            this.txtCreditCompany.TabIndex = 91;
             // 
             // title
             // 
@@ -194,21 +194,21 @@ namespace adiWFProject
             this.title.Text = ":רישום למסעות";
             this.title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox2
+            // txtParentPhoneNum
             // 
-            this.textBox2.Location = new System.Drawing.Point(806, 278);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox2.Size = new System.Drawing.Size(140, 26);
-            this.textBox2.TabIndex = 2;
+            this.txtParentPhoneNum.Location = new System.Drawing.Point(806, 278);
+            this.txtParentPhoneNum.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtParentPhoneNum.Name = "txtParentPhoneNum";
+            this.txtParentPhoneNum.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtParentPhoneNum.Size = new System.Drawing.Size(140, 26);
+            this.txtParentPhoneNum.TabIndex = 2;
             // 
             // journyDate
             // 
             this.journyDate.AutoSize = true;
             this.journyDate.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.journyDate.ForeColor = System.Drawing.Color.Navy;
-            this.journyDate.Location = new System.Drawing.Point(957, 471);
+            this.journyDate.Location = new System.Drawing.Point(957, 466);
             this.journyDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.journyDate.Name = "journyDate";
             this.journyDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -219,7 +219,7 @@ namespace adiWFProject
             // CANCEL
             // 
             this.CANCEL.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.CANCEL.Location = new System.Drawing.Point(25, 429);
+            this.CANCEL.Location = new System.Drawing.Point(734, 881);
             this.CANCEL.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CANCEL.Name = "CANCEL";
             this.CANCEL.Size = new System.Drawing.Size(112, 35);
@@ -228,24 +228,24 @@ namespace adiWFProject
             this.CANCEL.UseVisualStyleBackColor = false;
             this.CANCEL.Click += new System.EventHandler(this.CANCEL_Click);
             // 
-            // textBox4
+            // txtJourneyPlace
             // 
-            this.textBox4.Location = new System.Drawing.Point(469, 237);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox4.Size = new System.Drawing.Size(140, 26);
-            this.textBox4.TabIndex = 86;
+            this.txtJourneyPlace.Location = new System.Drawing.Point(469, 237);
+            this.txtJourneyPlace.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtJourneyPlace.Name = "txtJourneyPlace";
+            this.txtJourneyPlace.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtJourneyPlace.Size = new System.Drawing.Size(140, 26);
+            this.txtJourneyPlace.TabIndex = 86;
             // 
-            // textBox1
+            // txtPupilName
             // 
-            this.textBox1.Location = new System.Drawing.Point(805, 239);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox1.Size = new System.Drawing.Size(140, 26);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtPupilName.Location = new System.Drawing.Point(805, 239);
+            this.txtPupilName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPupilName.Name = "txtPupilName";
+            this.txtPupilName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtPupilName.Size = new System.Drawing.Size(140, 26);
+            this.txtPupilName.TabIndex = 1;
+            this.txtPupilName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // journyName
             // 
@@ -334,17 +334,18 @@ namespace adiWFProject
             this.label2.TabIndex = 103;
             this.label2.Text = "טלפון ההורה:";
             // 
-            // comboBox2
+            // cmPaymentMethod
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmPaymentMethod.FormattingEnabled = true;
+            this.cmPaymentMethod.Items.AddRange(new object[] {
             "מוזמן",
             "אשראי"});
-            this.comboBox2.Location = new System.Drawing.Point(465, 349);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(140, 28);
-            this.comboBox2.TabIndex = 106;
+            this.cmPaymentMethod.Location = new System.Drawing.Point(465, 349);
+            this.cmPaymentMethod.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmPaymentMethod.Name = "cmPaymentMethod";
+            this.cmPaymentMethod.Size = new System.Drawing.Size(140, 28);
+            this.cmPaymentMethod.TabIndex = 106;
+            this.cmPaymentMethod.SelectedIndexChanged += new System.EventHandler(this.cmPaymentMethod_SelectedIndexChanged);
             // 
             // paymentType
             // 
@@ -359,83 +360,84 @@ namespace adiWFProject
             this.paymentType.TabIndex = 107;
             this.paymentType.Text = "סוג התשלום:";
             // 
-            // creditCardType
+            // lblCreditCompany
             // 
-            this.creditCardType.AutoSize = true;
-            this.creditCardType.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.creditCardType.ForeColor = System.Drawing.Color.Navy;
-            this.creditCardType.Location = new System.Drawing.Point(620, 414);
-            this.creditCardType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.creditCardType.Name = "creditCardType";
-            this.creditCardType.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.creditCardType.Size = new System.Drawing.Size(150, 29);
-            this.creditCardType.TabIndex = 108;
-            this.creditCardType.Text = "חברת אשראי:";
+            this.lblCreditCompany.AutoSize = true;
+            this.lblCreditCompany.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreditCompany.ForeColor = System.Drawing.Color.Navy;
+            this.lblCreditCompany.Location = new System.Drawing.Point(620, 414);
+            this.lblCreditCompany.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCreditCompany.Name = "lblCreditCompany";
+            this.lblCreditCompany.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblCreditCompany.Size = new System.Drawing.Size(150, 29);
+            this.lblCreditCompany.TabIndex = 108;
+            this.lblCreditCompany.Text = "חברת אשראי:";
             // 
-            // cardNum
+            // lblCreditCardNumber
             // 
-            this.cardNum.AutoSize = true;
-            this.cardNum.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cardNum.ForeColor = System.Drawing.Color.Navy;
-            this.cardNum.Location = new System.Drawing.Point(620, 470);
-            this.cardNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.cardNum.Name = "cardNum";
-            this.cardNum.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cardNum.Size = new System.Drawing.Size(146, 29);
-            this.cardNum.TabIndex = 110;
-            this.cardNum.Text = "מספר כרטיס:";
+            this.lblCreditCardNumber.AutoSize = true;
+            this.lblCreditCardNumber.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreditCardNumber.ForeColor = System.Drawing.Color.Navy;
+            this.lblCreditCardNumber.Location = new System.Drawing.Point(620, 470);
+            this.lblCreditCardNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCreditCardNumber.Name = "lblCreditCardNumber";
+            this.lblCreditCardNumber.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblCreditCardNumber.Size = new System.Drawing.Size(146, 29);
+            this.lblCreditCardNumber.TabIndex = 110;
+            this.lblCreditCardNumber.Text = "מספר כרטיס:";
             // 
-            // textBox8
+            // txtPupilID
             // 
-            this.textBox8.Location = new System.Drawing.Point(538, 167);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox8.Size = new System.Drawing.Size(140, 26);
-            this.textBox8.TabIndex = 109;
-            this.textBox8.Text = "22";
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.txtPupilID.Location = new System.Drawing.Point(538, 167);
+            this.txtPupilID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPupilID.Name = "txtPupilID";
+            this.txtPupilID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtPupilID.Size = new System.Drawing.Size(140, 26);
+            this.txtPupilID.TabIndex = 109;
+            this.txtPupilID.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
-            // JourneyCodeFiled
+            // cmJourneyCode
             // 
-            this.JourneyCodeFiled.Location = new System.Drawing.Point(792, 355);
-            this.JourneyCodeFiled.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.JourneyCodeFiled.Name = "JourneyCodeFiled";
-            this.JourneyCodeFiled.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.JourneyCodeFiled.Size = new System.Drawing.Size(140, 26);
-            this.JourneyCodeFiled.TabIndex = 4;
+            this.cmJourneyCode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmJourneyCode.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.cmJourneyCode.FormattingEnabled = true;
+            this.cmJourneyCode.Location = new System.Drawing.Point(805, 371);
+            this.cmJourneyCode.Name = "cmJourneyCode";
+            this.cmJourneyCode.Size = new System.Drawing.Size(139, 29);
+            this.cmJourneyCode.TabIndex = 111;
+            this.cmJourneyCode.SelectedIndexChanged += new System.EventHandler(this.cmJourneyCode_SelectedIndexChanged);
             // 
             // journiesRegistingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1162, 567);
-            this.Controls.Add(this.JourneyCodeFiled);
-            this.Controls.Add(this.cardNum);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.creditCardType);
+            this.ClientSize = new System.Drawing.Size(1148, 930);
+            this.Controls.Add(this.cmJourneyCode);
+            this.Controls.Add(this.lblCreditCardNumber);
+            this.Controls.Add(this.txtPupilID);
+            this.Controls.Add(this.lblCreditCompany);
             this.Controls.Add(this.paymentType);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cmPaymentMethod);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pupilID);
             this.Controls.Add(this.checkBox);
             this.Controls.Add(this.securtiyInsure);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtCreditCardNumber);
             this.Controls.Add(this.pupilName);
-            this.Controls.Add(this.dateTimePicker);
+            this.Controls.Add(this.dtpRegisterDate);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.update);
-            this.Controls.Add(this.add);
-            this.Controls.Add(this.search);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.btnSearchPupil);
+            this.Controls.Add(this.txtJourneyName);
+            this.Controls.Add(this.txtCreditCompany);
             this.Controls.Add(this.title);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtParentPhoneNum);
             this.Controls.Add(this.journyDate);
             this.Controls.Add(this.CANCEL);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtJourneyPlace);
+            this.Controls.Add(this.txtPupilName);
             this.Controls.Add(this.journyName);
             this.Controls.Add(this.price);
             this.Controls.Add(this.place);
@@ -443,6 +445,7 @@ namespace adiWFProject
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "journiesRegistingForm";
             this.Text = "journiesRegistingForm";
+            this.Load += new System.EventHandler(this.journiesRegistingForm_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -453,21 +456,21 @@ namespace adiWFProject
 
         private System.Windows.Forms.CheckBox checkBox;
         private System.Windows.Forms.Label securtiyInsure;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtCreditCardNumber;
         private System.Windows.Forms.Label pupilName;
-        private System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.DateTimePicker dtpRegisterDate;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Button update;
-        private System.Windows.Forms.Button add;
-        private System.Windows.Forms.Button search;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button btnSearchPupil;
+        private System.Windows.Forms.TextBox txtJourneyName;
+        private System.Windows.Forms.TextBox txtCreditCompany;
         private System.Windows.Forms.Label title;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtParentPhoneNum;
         private System.Windows.Forms.Label journyDate;
         private System.Windows.Forms.Button CANCEL;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtJourneyPlace;
+        private System.Windows.Forms.TextBox txtPupilName;
         private System.Windows.Forms.Label journyName;
         private System.Windows.Forms.Label price;
         private System.Windows.Forms.Label place;
@@ -475,11 +478,11 @@ namespace adiWFProject
         private System.Windows.Forms.Label pupilID;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmPaymentMethod;
         private System.Windows.Forms.Label paymentType;
-        private System.Windows.Forms.Label creditCardType;
-        private System.Windows.Forms.Label cardNum;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox JourneyCodeFiled;
+        private System.Windows.Forms.Label lblCreditCompany;
+        private System.Windows.Forms.Label lblCreditCardNumber;
+        private System.Windows.Forms.TextBox txtPupilID;
+        private System.Windows.Forms.ComboBox cmJourneyCode;
     }
 }

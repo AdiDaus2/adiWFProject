@@ -160,7 +160,6 @@ namespace adiWFProject
         private bool selfHealth;
         private int journeyCode;
         private string journeyName;
-        private string pupilName;
         private DateTime registerDate;
         private string place;
         private int totalPayment;
@@ -173,7 +172,6 @@ namespace adiWFProject
 
         #region Properties
         public string JourneyName { get { return journeyName; } set { journeyName = value; } }
-        public string PupilName { get { return pupilName; } set { pupilName = value; } }
         public string Place { get { return place; } set { place = value; } }
         public string ParentPhoneNum { get { return parentPhoneNum; } set { parentPhoneNum = value; } }
         public int JourneyCode { get { return journeyCode; } set { journeyCode = value; } }
@@ -189,9 +187,9 @@ namespace adiWFProject
         public void Insert()
         {
             // שים לב לגרשיים: מספרים (journeyCode, totalPayment) ללא גרש, טקסט ותאריך עם גרש/סולמית
-            string SqlStr = string.Format("INSERT INTO journiesRegisting (journeyCode, journeyName, pupilID, pupilName, place, parentPhoneNum, selfHealth, registerDate, totalPayment, paymentType, creditCardType) " +
-                "values ({0}, '{1}', '{2}', '{3}', '{4}', '{5}', {6}, #{7}#, {8}, '{9}', '{10}')",
-                journeyCode, journeyName, pupilID, pupilName, place, parentPhoneNum, selfHealth, registerDate.ToString("yyyy/MM/dd"), totalPayment, paymentType, creditCardType);
+            string SqlStr = string.Format("INSERT INTO journiesRegisting (journeyCode, journeyName, pupilID, place, parentPhoneNum, selfHealth, registerDate, totalPayment, paymentType, creditCardType) " +
+                "values ({0}, '{1}', '{2}', '{3}', '{4}', {5}, #{6}#, {7}, '{8}', '{9}')",
+                journeyCode, journeyName, pupilID, place, parentPhoneNum, selfHealth, registerDate.ToString("yyyy/MM/dd"), totalPayment, paymentType, creditCardType);
 
             DbMain.InsDelUpd(SqlStr);
         }
@@ -213,9 +211,8 @@ namespace adiWFProject
         public void Update()
         {
             // עדכון לפי מפתח כפול (מסע וחניך)
-            string SqlStr = string.Format("UPDATE journiesRegisting SET journeyName='{1}', pupilName='{2}', place='{3}', parentPhoneNum='{4}', selfHealth={5}, registerDate=#{6}#, totalPayment={7}, paymentType='{8}', creditCardType='{9}' " +
-                "WHERE journeyCode={0} AND pupilID='{10}'",
-                journeyCode, journeyName, pupilName, place, parentPhoneNum, selfHealth, registerDate.ToString("yyyy/MM/dd"), totalPayment, paymentType, creditCardType, pupilID);
+            string SqlStr = string.Format("UPDATE journiesRegisting SET journeyName='{1}', place='{2}', parentPhoneNum='{3}', selfHealth={4}, registerDate=#{5}#, totalPayment={6}, paymentType='{7}', creditCardType='{8}' " + "WHERE journeyCode={0} AND pupilID='{9}'",
+                journeyCode, journeyName, place, parentPhoneNum, selfHealth, registerDate.ToString("yyyy/MM/dd"), totalPayment, paymentType, creditCardType, pupilID);
 
             DbMain.InsDelUpd(SqlStr);
         }

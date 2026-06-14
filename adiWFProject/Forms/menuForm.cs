@@ -101,6 +101,7 @@ namespace adiWFProject.Forms
             //toolStripMenuItem1.Visible = true;
             רישוםלמסעToolStripMenuItem.Visible = true;
             מסעחדשToolStripMenuItem.Visible = false;
+            דוחותToolStripMenuItem.Visible = false;
         }
 
         // --- כפתור התנתקות ---
@@ -214,6 +215,45 @@ namespace adiWFProject.Forms
         private void פעולותToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void דוח1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Duch1 d1 = new Duch1();
+                d1.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("שגיאה בפתיחת הטופס: " + ex.Message);
+            }
+        }
+
+        private void דוח2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Duch2 d2 = new Duch2();
+                d2.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("שגיאה בפתיחת הטופס: " + ex.Message);
+            }
+        }
+
+        private void דוח3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Duch3 d3 = new Duch3();
+                d3.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("שגיאה בפתיחת הטופס: " + ex.Message);
+            }
         }
     }
 }

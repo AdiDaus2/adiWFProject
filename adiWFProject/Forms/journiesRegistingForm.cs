@@ -1,148 +1,4 @@
-﻿/*
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
-namespace adiWFProject.Forms
-{
-    public partial class journiesRegistingForm : Form
-    {
-        public journiesRegistingForm()
-        {
-            InitializeComponent();
-        }
-        private DataRow GetSelectedRow()
-        {//-dataGrid מחזירה את השורה הנבחרת ב
-            DataTable dt = null;
-            if (dataGridView.DataSource is DataTable)
-                dt = dataGridView.DataSource as DataTable;
-            else if (dataGridView.DataSource is BindingSource)
-                dt = ((DataSet)((BindingSource)dataGridView.DataSource).DataSource).Tables[0];
-            else
-                return null;
-
-            return dt.Rows[this.dataGridView.CurrentRow.Index];
-        }
-        private void CANCEL_Click(object sender, EventArgs e)
-        {
-            DataRow dr = GetSelectedRow();
-            if (dr == null)
-                return;
-            pupil db = new pupil();
-            if (MessageBox.Show("למחוק את הרשומה?", "", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
-            {
-                db.Delete(Convert.ToInt32(dr["journeyCode"]));
-
-            }
-            dataGridView.DataSource = DbMain.GetAllRecord("journiesRegisting").Tables[0];
-        }
-
-        private void search_Click(object sender, EventArgs e)
-        {
-            journiesRegisting db = new journiesRegisting();
-            int id = int.Parse(textBox7.Text);
-
-            if (db.Found(id) != true)
-            {
-                MessageBox.Show(("לא נמצא לקוח בעל מספר זה") + " " + id);
-            }
-
-            else
-            {
-                DataTable ds = db.GetInfoByIdKey(id).Tables[0];
-                textBox1.Text = ds.Rows[0][""].ToString();
-                textBox2.Text = ds.Rows[0]["pupilName"].ToString();
-                textBox3.Text = ds.Rows[0]["tribeNAme"].ToString();
-                textBox4.Text = ds.Rows[0]["address"].ToString();
-                textBox5.Text = ds.Rows[0]["parentPhone"].ToString();
-                textBox6.Text = ds.Rows[0]["cityName"].ToString();
-                textBox7.Text = ds.Rows[0]["schoolName"].ToString();
-                textBox8.Text = ds.Rows[0]["staffID"].ToString();
-            }
-        }
-
-        private void update_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void add_Click(object sender, EventArgs e)
-        {
-            journiesRegisting editJourniesRegisting = new journiesRegisting();
-            string missingFields = "";
-
-            if (string.IsNullOrWhiteSpace(textBox1.Text)) missingFields += "שם תלמיד (textBox1)\n";
-            if (string.IsNullOrWhiteSpace(textBox2.Text)) missingFields += "טלפון (textBox2)\n";
-            if (string.IsNullOrWhiteSpace(JourneyCodeFiled.Text)) missingFields += "קוד מסע (JourneyCodeFiled)\n";
-            if (string.IsNullOrWhiteSpace(textBox3.Text)) missingFields += "שם נסיעה (textBox3)\n";
-            if (string.IsNullOrWhiteSpace(textBox4.Text)) missingFields += "מקום (textBox4)\n";
-            if (string.IsNullOrWhiteSpace(textBox5.Text)) missingFields += "תשלום (textBox5)\n";
-            if (string.IsNullOrWhiteSpace(textBox6.Text)) missingFields += "סוג כרטיס (textBox6)\n";
-            if (string.IsNullOrWhiteSpace(textBox7.Text)) missingFields += "מספר כרטיס (textBox7)\n";
-            if (comboBox2.SelectedIndex == -1) missingFields += "סוג תשלום (comboBox2)\n";
-
-            if (missingFields != "")
-            {
-                MessageBox.Show("השדות הבאים חסרים:\n" + missingFields);
-            }
-            else
-            {
-                editJourniesRegisting.PupilName = textBox1.Text;
-                editJourniesRegisting.ParentPhoneNum = int.Parse(textBox2.Text);
-                editJourniesRegisting.SelfHealth = checkBox.Checked;
-                editJourniesRegisting.JourneyCode = int.Parse(JourneyCodeFiled.Text); ;
-                editJourniesRegisting.JourneyName = textBox3.Text;
-                editJourniesRegisting.RegisterDate = dateTimePicker.Value;
-                editJourniesRegisting.Place = textBox4.Text;
-                editJourniesRegisting.TotalPayment = int.Parse(textBox5.Text);
-                editJourniesRegisting.PaymentType = comboBox2.Text;
-                editJourniesRegisting.CreditCardType = textBox6.Text;
-                editJourniesRegisting.CreditCardNumber = int.Parse(textBox7.Text);
-                DialogResult result = System.Windows.Forms.DialogResult.OK;
-
-                if (result == System.Windows.Forms.DialogResult.OK)
-                {
-                    editJourniesRegisting.Insert();
-                    MessageBox.Show("Pupil Data Updated Successfully");
-                    dataGridView.DataSource = DbMain.GetAllRecord("pupil").Tables[0];
-
-
-                }
-            }
-        }
-        
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-    }
-}
-*/
-
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -161,151 +17,387 @@ namespace adiWFProject
             InitializeComponent();
         }
 
-        private void journiesRegistingForm_Load(object sender, EventArgs e)
+        private void journiesRegistingForm_Load_1(object sender, EventArgs e)
         {
-            RefreshData();
+            cmPaymentMethod.Items.Clear();
+            cmPaymentMethod.Items.Add("מזומן");
+            cmPaymentMethod.Items.Add("אשראי");
+            cmPaymentMethod.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            HideCreditFields();
+            dtpRegisterDate.Value = DateTime.Now;
+
+            FillJourneyComboBox();
+            RefreshGrid();
         }
 
-        private void RefreshData()
+        private void RefreshGrid()
         {
             try
             {
-                // טעינת נתונים לטבלה מהדאטה-בייס
-                dataGridView.DataSource = DbMain.GetAllRecord("journiesRegisting").Tables[0];
+                string sql = "SELECT * FROM journiesRegisting";
+                DataTable dt = DbMain.GetTable(sql);
+                if (dt != null)
+                {
+                    dataGridView.DataSource = dt;
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("שגיאה בריענון נתונים: " + ex.Message);
+                MessageBox.Show("שגיאה בטעינת הנתונים לטבלה במסך:\n" + ex.Message, "שגיאה", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-
-        private void search_Click(object sender, EventArgs e)
+        private void FillJourneyComboBox()
         {
-            // בדיקה ששדות הטקסט אינם ריקים
-            if (string.IsNullOrWhiteSpace(textBox8.Text) || string.IsNullOrWhiteSpace(JourneyCodeFiled.Text))
+            cmJourneyCode.Items.Clear();
+            try
             {
-                MessageBox.Show("נא להזין ת.ז חניך וקוד מסע לחיפוש");
+                string sql = "SELECT journeyCode FROM journies";
+                DataTable dt = DbMain.GetTable(sql);
+
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        if (row["journeyCode"] != DBNull.Value)
+                        {
+                            cmJourneyCode.Items.Add(row["journeyCode"].ToString());
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("שגיאה בטעינת קודי המסעות:\n" + ex.Message, "שגיאה", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnSearchPupil_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtPupilID.Text))
+            {
+                MessageBox.Show("אנא הכנסי תעודת זהות לצורך חיפוש.", "הודעה", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             try
             {
-                journiesRegisting jr = new journiesRegisting();
+                string sqlPupil = $"SELECT * FROM pupil WHERE pupilID = '{txtPupilID.Text.Trim()}'";
+                DataTable dtPupil = DbMain.GetTable(sqlPupil);
 
-                // הגדרת המשתנים לפי הסוג שהמחלקה הלוגית מצפה לו:
-                // לפי הודעת השגיאה האחרונה:
-                // הפרמטר הראשון (pId) כנראה צריך להיות int
-                // הפרמטר השני (jCode) חייב להיות string
-                int pId = int.Parse(textBox8.Text);
-                string jCode = JourneyCodeFiled.Text;
-
-                // קריאה לפונקציה Found עם הסוגים המתאימים
-                if (jr.Found(pId, jCode))
+                if (dtPupil != null && dtPupil.Rows.Count > 0)
                 {
-                    DataTable ds = jr.GetInfoByIdKey(pId, jCode).Tables[0];
-                    if (ds.Rows.Count > 0)
-                    {
-                        // מילוי הנתונים בטופס
-                        textBox1.Text = ds.Rows[0]["pupilID"].ToString();
-                        JourneyCodeFiled.Text = ds.Rows[0]["journeyCode"].ToString();
+                    DataRow row = dtPupil.Rows[0];
+                    txtPupilName.Text = row["pupilName"].ToString();
+                    txtParentPhoneNum.Text = row["parentPhone"].ToString();
+                    return;
+                }
 
-                        if (ds.Columns.Contains("paymentType"))
-                            comboBox2.Text = ds.Rows[0]["paymentType"].ToString();
-                    }
-                }
-                else
+                string sqlStaff = $"SELECT * FROM staff WHERE staffID = '{txtPupilID.Text.Trim()}'";
+                DataTable dtStaff = DbMain.GetTable(sqlStaff);
+
+                if (dtStaff != null && dtStaff.Rows.Count > 0)
                 {
-                    MessageBox.Show("לא נמצא רישום תואם");
+                    DataRow row = dtStaff.Rows[0];
+                    txtPupilName.Text = row["staffFullName"].ToString();
+                    txtParentPhoneNum.Text = row["phoneNumber"].ToString();
+                    return;
                 }
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("נא לוודא שהזנת מספר תקין בשדה תעודת הזהות");
+
+                MessageBox.Show("תעודת זהות זו לא נמצאה כחניך או כמדריך במערכת.", "לא נמצא", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("שגיאה בחיפוש: " + ex.Message);
+                MessageBox.Show("שגיאה בשליפת הנתונים:\n" + ex.Message, "שגיאה", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void add_Click(object sender, EventArgs e)
+        private void cmJourneyCode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmJourneyCode.SelectedItem == null) return;
+            LoadJourneyDetails(cmJourneyCode.SelectedItem.ToString());
+        }
+
+        private void LoadJourneyDetails(string selectedCode)
         {
             try
             {
-                journiesRegisting jr = new journiesRegisting();
+                string sql = $"SELECT * FROM journies WHERE journeyCode = {selectedCode}";
+                DataTable dt = DbMain.GetTable(sql);
 
-                // השמת ערכים לאובייקט הלוגי
-                jr.PupilID = textBox1.Text;
-                jr.JourneyCode = int.Parse(JourneyCodeFiled.Text);
-
-                // הערה: אם מופיעה שגיאה על IsPaid, וודא שזה השם במחלקה journiesRegisting.cs
-                // אם השם הוא SelfHealth, שנה את השורה בהתאם.
-                // jr.SelfHealth = checkBox.Checked; 
-
-                jr.Insert();
-                MessageBox.Show("הרישום נוסף בהצלחה למערכת");
-                RefreshData();
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    DataRow row = dt.Rows[0];
+                    txtJourneyName.Text = row["journeyName"].ToString();
+                    txtJourneyPlace.Text = row["place"].ToString();
+                    textBox5.Text = row["price"].ToString();
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("שגיאה בתהליך ההוספה: " + ex.Message);
+                MessageBox.Show("שגיאה בשליפת פרטי המסע:\n" + ex.Message, "שגיאה", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void cmPaymentMethod_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmPaymentMethod.SelectedItem == null) return;
+            string selectedMethod = cmPaymentMethod.SelectedItem.ToString();
+
+            if (selectedMethod == "אשראי")
+            {
+                lblCreditCompany.Visible = true;
+                txtCreditCompany.Visible = true;
+                lblCreditCardNumber.Visible = true;
+                txtCreditCardNumber.Visible = true;
+            }
+            else
+            {
+                HideCreditFields();
+                txtCreditCompany.Text = "";
+                txtCreditCardNumber.Text = "";
+            }
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            if (cmJourneyCode.SelectedItem == null || string.IsNullOrWhiteSpace(txtPupilID.Text))
+            {
+                MessageBox.Show("חובה לבחור קוד מסע ולהזין תעודת זהות תקינה.", "שגיאה בקלט", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (cmPaymentMethod.SelectedItem == null)
+            {
+                MessageBox.Show("אנא בחרי סוג תשלום.", "שגיאה בקלט", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            try
+            {
+                string journeyCode = cmJourneyCode.SelectedItem.ToString();
+                string pupilID = txtPupilID.Text.Trim();
+                string journeyName = txtJourneyName.Text.Trim();
+                string place = txtJourneyPlace.Text.Trim();
+                string parentPhone = txtParentPhoneNum.Text.Trim();
+                string totalPayment = textBox5.Text.Trim();
+                string paymentMethod = cmPaymentMethod.SelectedItem.ToString();
+                string creditCompany = txtCreditCompany.Text.Trim();
+
+                bool healthStatement = checkBox.Checked;
+                string regestingDate = dtpRegisterDate.Value.ToString("yyyy-MM-dd");
+
+                string sqlCheckPupil = $"SELECT * FROM pupil WHERE pupilID = '{pupilID}'";
+                DataTable dtCheckPupil = DbMain.GetTable(sqlCheckPupil);
+
+                if (dtCheckPupil.Rows.Count == 0)
+                {
+                    string sqlCheckStaff = $"SELECT * FROM staff WHERE staffID = '{pupilID}'";
+                    DataTable dtCheckStaff = DbMain.GetTable(sqlCheckStaff);
+
+                    if (dtCheckStaff.Rows.Count > 0)
+                    {
+                        DataRow staffRow = dtCheckStaff.Rows[0];
+                        string staffName = staffRow["staffFullName"].ToString();
+                        string staffPhone = staffRow["phoneNumber"].ToString();
+                        string staffTribe = staffRow["selfTribeName"].ToString();
+
+                        string sqlInsertShadowPupil = $@"INSERT INTO pupil (pupilID, pupilName, tribeName, birthDate, address, parentPhone, schoolName, cityName) 
+                                                         VALUES ('{pupilID}', '{staffName}', '{staffTribe}', #2000-01-01#, 'מדריך', '{staffPhone}', 'צוות', 'צוות')";
+                        DbMain.InsDelUpd(sqlInsertShadowPupil);
+                    }
+                }
+
+                string sqlCheck = $"SELECT * FROM journiesRegisting WHERE journeyCode = {journeyCode} AND pupilID = '{pupilID}'";
+                DataTable dtCheck = DbMain.GetTable(sqlCheck);
+
+                if (dtCheck != null && dtCheck.Rows.Count > 0)
+                {
+                    MessageBox.Show("חניך או מדריך זה כבר רשום למסע שנבחר!", "רישום כפול", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // תיקון: לפי תמונת השגיאה באקסס, שם העמודה בטבלה הוא joumeyName (עם m במקום rn)
+                string sqlInsert = $@"INSERT INTO journiesRegisting (journeyCode, pupilID, joumeyName, place, parentPhoneNum, selfHealth, registerDate, totalPayment, paymentType, creditCardType) 
+                                      VALUES ({journeyCode}, '{pupilID}', '{journeyName}', '{place}', '{parentPhone}', {healthStatement}, '{regestingDate}', {totalPayment}, '{paymentMethod}', '{creditCompany}')";
+
+                bool isSuccess = DbMain.InsDelUpd(sqlInsert);
+
+                if (isSuccess)
+                {
+                    MessageBox.Show("הרישום למסע בוצע בהצלחה!", "הצלחה", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearAllForm();
+                    RefreshGrid();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("שגיאה במהלך השמירה באקסס:\n" + ex.Message, "שגיאה", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView.CurrentRow == null) return;
+
+            try
+            {
+                DataGridViewRow row = dataGridView.CurrentRow;
+
+                txtPupilID.Text = row.Cells["pupilID"].Value.ToString();
+                string journeyCode = row.Cells["journeyCode"].Value.ToString();
+                cmJourneyCode.SelectedItem = journeyCode;
+
+                LoadJourneyDetails(journeyCode);
+
+                txtParentPhoneNum.Text = row.Cells["parentPhoneNum"].Value.ToString();
+
+                if (row.Cells["registerDate"].Value != DBNull.Value)
+                    dtpRegisterDate.Value = Convert.ToDateTime(row.Cells["registerDate"].Value);
+
+                if (row.Cells["selfHealth"].Value != DBNull.Value)
+                {
+                    checkBox.Checked = Convert.ToBoolean(row.Cells["selfHealth"].Value);
+                }
+
+                string paymentType = row.Cells["paymentType"].Value.ToString();
+                cmPaymentMethod.SelectedItem = paymentType;
+
+                if (paymentType == "אשראי")
+                {
+                    txtCreditCompany.Text = row.Cells["creditCardType"].Value.ToString();
+                }
+
+                try
+                {
+                    string sqlPupil = $"SELECT pupilName FROM pupil WHERE pupilID = '{txtPupilID.Text.Trim()}'";
+                    DataTable dtPupil = DbMain.GetTable(sqlPupil);
+                    if (dtPupil != null && dtPupil.Rows.Count > 0)
+                    {
+                        txtPupilName.Text = dtPupil.Rows[0]["pupilName"].ToString();
+                    }
+                    else
+                    {
+                        string sqlStaff = $"SELECT staffFullName FROM staff WHERE staffID = '{txtPupilID.Text.Trim()}'";
+                        DataTable dtStaff = DbMain.GetTable(sqlStaff);
+                        if (dtStaff != null && dtStaff.Rows.Count > 0)
+                        {
+                            txtPupilName.Text = dtStaff.Rows[0]["staffFullName"].ToString();
+                        }
+                    }
+                }
+                catch { }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("שגיאה בבחירת שורה מהטבלה:\n" + ex.Message, "שגיאה", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void update_Click(object sender, EventArgs e)
         {
+            if (cmJourneyCode.SelectedItem == null || string.IsNullOrWhiteSpace(txtPupilID.Text))
+            {
+                MessageBox.Show("אנא בחרי שורה מהטבלה או מלאי קוד מסע ותעודת זהות לעדכון.", "שגיאה", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             try
             {
-                journiesRegisting jr = new journiesRegisting();
-                jr.PupilID = textBox1.Text;
-                jr.JourneyCode = int.Parse(JourneyCodeFiled.Text);
+                string journeyCode = cmJourneyCode.SelectedItem.ToString();
+                string pupilID = txtPupilID.Text.Trim();
+                string paymentMethod = cmPaymentMethod.SelectedItem?.ToString() ?? "מזומן";
+                string creditCompany = txtCreditCompany.Text.Trim();
+                string parentPhone = txtParentPhoneNum.Text.Trim();
+                double totalPayment = string.IsNullOrEmpty(textBox5.Text) ? 0 : Convert.ToDouble(textBox5.Text);
+                bool healthStatement = checkBox.Checked;
 
-                jr.Update();
-                MessageBox.Show("הרישום עודכן בהצלחה");
-                RefreshData();
+                string sqlUpdate = $@"UPDATE journiesRegisting 
+                                      SET paymentType = '{paymentMethod}', creditCardType = '{creditCompany}', parentPhoneNum = '{parentPhone}', totalPayment = {totalPayment}, selfHealth = {healthStatement}
+                                      WHERE journeyCode = {journeyCode} AND pupilID = '{pupilID}'";
+
+                if (DbMain.InsDelUpd(sqlUpdate))
+                {
+                    MessageBox.Show("נתוני הרישום עודכנו בהצלחה!", "הצלחה", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearAllForm();
+                    RefreshGrid();
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("שגיאה בעדכון הנתונים: " + ex.Message);
+                MessageBox.Show("שגיאה בעדכון הנתונים:\n" + ex.Message, "שגיאה", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void CANCEL_Click(object sender, EventArgs e)
         {
-            if (dataGridView.CurrentRow == null)
+            if (cmJourneyCode.SelectedItem == null || string.IsNullOrWhiteSpace(txtPupilID.Text))
             {
-                MessageBox.Show("יש לבחור שורה למחיקה מהטבלה");
+                MessageBox.Show("אנא בחרי שורה מהטבלה למחיקה.", "שגיאה", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (MessageBox.Show("האם אתה בטוח שברצונך למחוק את הרישום שנבחר?", "אישור מחיקה", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            DialogResult res = MessageBox.Show("האם את בטוחה שברצונך לבטל רישום זה?", "אישור מחיקה", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.No) return;
+
+            try
             {
-                try
+                string journeyCode = cmJourneyCode.SelectedItem.ToString();
+                string pupilID = txtPupilID.Text.Trim();
+
+                string sqlDelete = $"DELETE FROM journiesRegisting WHERE journeyCode = {journeyCode} AND pupilID = '{pupilID}'";
+
+                if (DbMain.InsDelUpd(sqlDelete))
                 {
-                    journiesRegisting jr = new journiesRegisting();
-
-                    // שליפת המפתחות מהשורה שנבחרה בגריד
-                    string pId = dataGridView.CurrentRow.Cells["pupilID"].Value.ToString();
-                    int jCode = Convert.ToInt32(dataGridView.CurrentRow.Cells["journeyCode"].Value);
-
-                    // קריאה לפונקציית המחיקה עם הפרמטרים הנכונים
-                    jr.Delete(pId, jCode);
-
-                    MessageBox.Show("הרישום נמחק בהצלחה");
-                    RefreshData();
+                    MessageBox.Show("הרישום בבוטל ונמחק בהצלחה!", "הצלחה", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearAllForm();
+                    RefreshGrid();
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("שגיאה בתהליך המחיקה: " + ex.Message);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("שגיאה במחיקת הנתונים:\n" + ex.Message, "שגיאה", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        // אירועים ריקים הנדרשים על ידי ה-Designer
-        private void textBox1_TextChanged(object sender, EventArgs e) { }
+        private void HideCreditFields()
+        {
+            lblCreditCompany.Visible = false;
+            txtCreditCompany.Visible = false;
+            lblCreditCardNumber.Visible = false;
+            txtCreditCardNumber.Visible = false;
+        }
+
+        private void ClearFormExceptID()
+        {
+            txtPupilName.Text = "";
+            txtParentPhoneNum.Text = "";
+            cmJourneyCode.SelectedIndex = -1;
+            txtJourneyName.Text = "";
+            txtJourneyPlace.Text = "";
+            textBox5.Text = "";
+            cmPaymentMethod.SelectedIndex = -1;
+            dtpRegisterDate.Value = DateTime.Now;
+            checkBox.Checked = false;
+            HideCreditFields();
+            txtCreditCompany.Text = "";
+            txtCreditCardNumber.Text = "";
+        }
+
+        private void ClearAllForm()
+        {
+            txtPupilID.Text = "";
+            ClearFormExceptID();
+        }
+
+        private void txtPupilID_TextChanged(object sender, EventArgs e)
+        {
+            ClearFormExceptID();
+        }
+
         private void textBox7_TextChanged(object sender, EventArgs e) { }
+        private void textBox1_TextChanged(object sender, EventArgs e) { }
         private void textBox8_TextChanged(object sender, EventArgs e) { }
-        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
     }
 }

@@ -148,6 +148,7 @@
             this.dataGridView.RowHeadersWidth = 62;
             this.dataGridView.Size = new System.Drawing.Size(365, 169);
             this.dataGridView.TabIndex = 121;
+            this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             // 
             // update
@@ -336,7 +337,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(932, 559);
+            this.ClientSize = new System.Drawing.Size(932, 620);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.IDStaff);
             this.Controls.Add(this.textBox9);

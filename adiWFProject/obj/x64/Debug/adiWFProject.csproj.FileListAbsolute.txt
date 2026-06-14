@@ -1,11 +1,13 @@
-C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\x64\Debug\adiWFProject.exe
 C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\x64\Debug\access\Database1.accdb
-C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\x64\Debug\access\db2.accdb
 C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\x64\Debug\adiWFProject.exe.config
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\x64\Debug\adiWFProject.exe
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\x64\Debug\adiWFProject.pdb
 C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\x64\Debug\adiWFProject.csproj.AssemblyReference.cache
 C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\x64\Debug\adiWFProject.activitiesForm.resources
 C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\x64\Debug\adiWFProject.activityReportForm.resources
-C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\x64\Debug\adiWFProject.Form1.resources
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\x64\Debug\adiWFProject.Duch1.resources
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\x64\Debug\adiWFProject.Duch2.resources
+C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\x64\Debug\adiWFProject.Duch3.resources
 C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\x64\Debug\adiWFProject.Forms.journiesForm.resources
 C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\x64\Debug\adiWFProject.journiesRegistingForm.resources
 C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\x64\Debug\adiWFProject.login.resources
@@ -17,4 +19,3 @@ C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\ad
 C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\x64\Debug\adiWFProject.csproj.CoreCompileInputs.cache
 C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\x64\Debug\adiWFProject.exe
 C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\obj\x64\Debug\adiWFProject.pdb
-C:\Users\ronen\OneDrive\שולחן העבודה\עדי - פרוייקט י_ב\adiWFProject\adiWFProject\bin\x64\Debug\adiWFProject.pdb

@@ -36,7 +36,6 @@ namespace adiWFProject
             this.update = new System.Windows.Forms.Button();
             this.add = new System.Windows.Forms.Button();
             this.search = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.title = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -52,8 +51,9 @@ namespace adiWFProject
             this.cityName = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.parentPhone = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.schoolName = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -134,16 +134,6 @@ namespace adiWFProject
             this.search.Text = "חפש";
             this.search.UseVisualStyleBackColor = false;
             this.search.Click += new System.EventHandler(this.search_Click);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(789, 375);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox3.Size = new System.Drawing.Size(140, 26);
-            this.textBox3.TabIndex = 92;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox6
             // 
@@ -299,7 +289,7 @@ namespace adiWFProject
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(789, 651);
+            this.textBox8.Location = new System.Drawing.Point(491, 142);
             this.textBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox8.Name = "textBox8";
             this.textBox8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -320,16 +310,6 @@ namespace adiWFProject
             this.parentPhone.TabIndex = 102;
             this.parentPhone.Text = "מספר טלפון של ההורים:";
             // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(488, 143);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox9.Size = new System.Drawing.Size(140, 26);
-            this.textBox9.TabIndex = 105;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
-            // 
             // schoolName
             // 
             this.schoolName.AutoSize = true;
@@ -343,12 +323,30 @@ namespace adiWFProject
             this.schoolName.TabIndex = 104;
             this.schoolName.Text = "בית ספר:";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(789, 653);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(140, 28);
+            this.comboBox1.TabIndex = 105;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(789, 374);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(140, 28);
+            this.comboBox2.TabIndex = 106;
+            // 
             // pupilForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 705);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.schoolName);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.parentPhone);
@@ -361,7 +359,6 @@ namespace adiWFProject
             this.Controls.Add(this.update);
             this.Controls.Add(this.add);
             this.Controls.Add(this.search);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.title);
             this.Controls.Add(this.textBox2);
@@ -391,7 +388,6 @@ namespace adiWFProject
         private System.Windows.Forms.Button update;
         private System.Windows.Forms.Button add;
         private System.Windows.Forms.Button search;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label title;
         private System.Windows.Forms.TextBox textBox2;
@@ -407,7 +403,8 @@ namespace adiWFProject
         private System.Windows.Forms.Label cityName;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label parentPhone;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label schoolName;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
